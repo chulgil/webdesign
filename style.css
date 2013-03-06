@@ -1,0 +1,154 @@
+/* UI 메인 공통
+----------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+  font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a{text-decoration:none ; font-family: 굴림;}
+a:link { text-decoration:none; color:#040f6f; font-family: 굴림;}
+a:visited { text-decoration:none; color:#040f6f; font-family: 굴림;}
+a:hover { color:#dc143c; text-decoration:underline; font-family: 굴림;}
+a img {color:#FFFFFF}
+body {font-size:9pt; font-family: 굴림;}
+td {font-size:9pt; font-family: 굴림;} 
+input{font-size:9pt; font-family:굴림;}
+li {
+    list-style-type:none;
+    display: table-cell;
+}
+ul {
+    margin:0px;padding:0px;
+    display:table-row;
+    overflow: hidden;
+　　/* IE6 Hack */ zoom: 1;
+}
+.hidden { 
+    display:none;
+}
+.line {
+    border-top:1px solid #D6CAC0;
+    border-bottom:0px solid #D6CAC0;
+    width:90%;
+}
+
+/* 크로스브라우징 대책
+----------------------------------------------------*/
+div.divstyle{
+  position:absolute;left:0px;top:0px;right:0px;bottom:0px; 
+}
+
+
+/* 메인메뉴 백그라운드 라인
+----------------------------------------------------*/
+.main_menu_line {
+    position: relative; 
+    top : 100px;
+    background-color: #F3F0E9;
+    border-top:1px solid #D6CAC0;
+    border-bottom:1px solid #D6CAC0;
+    height: 33px;
+}
+
+/* 레프트 탭메뉴
+----------------------------------------------------*/
+
+ 
+/* 메인 타이틀
+----------------------------------------------------*/
+.main_empty {width:100px}
+.main_title {margin:10px;}
+
+/* 메뉴폰트스타일
+----------------------------------------------------*/
+.menu_font { color:#585556;font-size:12px;} 
+.contens_font {color:#8B8080; font-size:8px;}
+
+/* 레프트 탭메뉴
+----------------------------------------------------*/
+.menu_active { background-color:#D4C9B9; }
+.menu_hidden { background-color:#FFFFFF;}
+.menu_style1 { background-color:#FF5B49;color:#FFFFFF; }
+.menu_style2 { color:#FF5B49; }
+.menu_style3 { background-color:#96CEc5;color:#FFFFFF; }
+
+.left_menu { 
+    position: absolute; 
+    height: 33px;
+    left:100px;
+} 
+.left_menu li { 
+    float:left;
+    font-weight:bold;  
+    width:76px;
+    height:33px;
+    line-height: 33px;
+    text-align:center;
+}
+.left_contents {
+    position: absolute;
+}
+.left_menu_contents {
+    position: absolute;
+    left:100px;
+    top:33px;
+    width:168px;
+    border:1px solid #D6CAC0;
+}
+.left_menu_contents ul {
+    margin:5px;
+}
+
+.left_menu_contents li {
+    font-size:8pt;
+    float:left;
+    font-weight:bold;  
+    width:150px;
+    padding:5px 5px 5px 5px;
+}
+.left_menu_contents ul {
+    float:left;
+}
